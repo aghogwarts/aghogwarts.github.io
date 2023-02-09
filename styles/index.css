@@ -327,10 +327,10 @@ body {
 @media (max-width: 800px) {
     #about {
         display: none;
-    }
+    } /*
     #contact {
         display: none;
-    }
+    }*/
     #work {
         display: none;
     }
