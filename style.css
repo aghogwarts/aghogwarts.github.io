@@ -162,7 +162,7 @@
     --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
     --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
     --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-    
+
     /* Semantic Color Tokens (Dark Mode) */
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
@@ -222,7 +222,7 @@
   --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
   --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
   --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-  
+
   /* Semantic Color Tokens (Dark Mode) */
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
@@ -268,7 +268,7 @@
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
-  
+
   /* Semantic Color Tokens (Light Mode) */
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
@@ -303,7 +303,7 @@ html {
   font-family: var(--font-family-base);
   line-height: var(--line-height-normal);
   color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: none;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
@@ -732,9 +732,9 @@ select.form-control {
 }
 
 @font-face {
-  font-family: 'FKGroteskNeue';
-  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
-    format('woff2');
+  font-family: "FKGroteskNeue";
+  src: url("https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2")
+    format("woff2");
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
@@ -755,7 +755,7 @@ select.form-control {
   --vscode-error: #f48771;
   --vscode-warning: #ffcc02;
   --vscode-success: #89d185;
-  
+
   /* Syntax Highlighting Colors */
   --syntax-keyword: #569cd6;
   --syntax-string: #ce9178;
@@ -763,7 +763,7 @@ select.form-control {
   --syntax-function: #dcdcaa;
   --syntax-variable: #9cdcfe;
   --syntax-number: #b5cea8;
-  
+
   /* Animation Variables */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
@@ -791,7 +791,7 @@ select.form-control {
 }
 
 body {
-  font-family: 'Fira Code', var(--font-family-mono);
+  font-family: "Fira Code", var(--font-family-mono);
   background-color: var(--vscode-bg-primary);
   color: var(--vscode-text-primary);
   height: 100vh;
@@ -828,9 +828,15 @@ body {
   opacity: 0.8;
 }
 
-.minimize { background-color: #ffbd2e; }
-.maximize { background-color: #28ca42; }
-.close { background-color: #ff5f56; }
+.minimize {
+  background-color: #ffbd2e;
+}
+.maximize {
+  background-color: #28ca42;
+}
+.close {
+  background-color: #ff5f56;
+}
 
 .title-bar__title {
   font-size: 13px;
@@ -1037,13 +1043,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translateY(10px); 
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -1072,8 +1078,14 @@ body {
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-subtitle {
@@ -1511,8 +1523,12 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Blog Detail */
@@ -1604,41 +1620,41 @@ body {
     z-index: 100;
     transition: left var(--transition-normal);
   }
-  
+
   .sidebar.open {
     left: 0;
   }
-  
+
   .content-area {
     margin-left: 0;
   }
-  
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .page {
     padding: 16px;
   }
-  
+
   .hero {
     padding: 40px 0;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
@@ -1648,15 +1664,15 @@ body {
   .blog-filters {
     flex-direction: column;
   }
-  
+
   .filter-btn {
     text-align: center;
   }
-  
+
   .hero-title {
     font-size: 1.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
@@ -1682,11 +1698,11 @@ body {
   .status-bar {
     display: none;
   }
-  
+
   .content-area {
     margin-left: 0;
   }
-  
+
   .page {
     display: block !important;
     page-break-inside: avoid;
