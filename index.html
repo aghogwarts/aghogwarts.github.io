@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Developer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-color-scheme="dark">
+    <!-- VSCode Title Bar -->
+    <header class="title-bar">
+        <div class="title-bar__controls">
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+            <div class="control close"></div>
+        </div>
+        <div class="title-bar__title">Portfolio - Visual Studio Code</div>
+        <div class="title-bar__menu">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Sidebar File Explorer -->
+        <aside class="sidebar">
+            <div class="explorer">
+                <div class="explorer__header">
+                    <h3>EXPLORER</h3>
+                    <button class="collapse-btn">−</button>
+                </div>
+                <div class="explorer__content">
+                    <div class="folder">
+                        <div class="folder__header">
+                            <span class="folder__icon">📁</span>
+                            <span class="folder__name">PORTFOLIO</span>
+                        </div>
+                        <nav class="file-tree">
+                            <a href="#about" class="file-item active" data-page="about">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name">about.md</span>
+                            </a>
+                            <a href="#projects" class="file-item" data-page="projects">
+                                <span class="file-icon">🗂️</span>
+                                <span class="file-name">projects.json</span>
+                            </a>
+                            <a href="#blog" class="file-item" data-page="blog">
+                                <span class="file-icon">📝</span>
+                                <span class="file-name">blog.ts</span>
+                            </a>
+                            <a href="#contact" class="file-item" data-page="contact">
+                                <span class="file-icon">📧</span>
+                                <span class="file-name">contact.js</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="content-area">
+            <!-- Tab Bar -->
+            <div class="tab-bar">
+                <div class="tab active" data-page="about">
+                    <span class="tab-icon">📄</span>
+                    <span class="tab-name">about.md</span>
+                    <button class="tab-close">×</button>
+                </div>
+            </div>
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <span class="breadcrumb-item">portfolio</span>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-item current">about.md</span>
+            </div>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- About Page -->
+                <div id="about-page" class="page active">
+                    <div class="hero">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                <span class="typing-text">Hello, I'm John Developer</span>
+                                <span class="cursor">|</span>
+                            </h1>
+                            <p class="hero-subtitle">Full Stack Developer crafting digital experiences</p>
+                            <div class="hero-actions">
+                                <a href="#projects" class="btn btn--primary" data-page="projects">View My Work</a>
+                                <a href="#contact" class="btn btn--outline" data-page="contact">Get In Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="about-section">
+                            <h2>// About Me</h2>
+                            <p>Passionate developer with 5+ years of experience building modern web applications. I love creating efficient, scalable solutions and sharing knowledge with the developer community.</p>
+                        </div>
+
+                        <div class="skills-section">
+                            <h2>// Technical Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h3>Frontend</h3>
+                                    <div class="skills-list">
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">TypeScript</span>
+                                        <span class="skill-tag">React</span>
+                                        <span class="skill-tag">Vue.js</span>
+                                        <span class="skill-tag">HTML5</span>
+                                        <span class="skill-tag">CSS3</span>
+                                        <span class="skill-tag">Sass</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h3>Backend</h3>
+                                    <div class="skills-list">
+                                        <span class="skill-tag">Node.js</span>
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">MongoDB</span>
+                                        <span class="skill-tag">PostgreSQL</span>
+                                        <span class="skill-tag">REST APIs</span>
+                                        <span class="skill-tag">GraphQL</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h3>Tools & DevOps</h3>
+                                    <div class="skills-list">
+                                        <span class="skill-tag">Git</span>
+                                        <span class="skill-tag">Docker</span>
+                                        <span class="skill-tag">AWS</span>
+                                        <span class="skill-tag">Jest</span>
+                                        <span class="skill-tag">Cypress</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Page -->
+                <div id="projects-page" class="page">
+                    <div class="page-header">
+                        <h1>// Projects</h1>
+                        <p>A collection of my recent work and side projects</p>
+                    </div>
+                    <div class="projects-grid" id="projects-container">
+                        <!-- Projects will be loaded here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Blog Page -->
+                <div id="blog-page" class="page">
+                    <div class="page-header">
+                        <h1>// Blog</h1>
+                        <p>Thoughts on development, technology, and life</p>
+                    </div>
+                    
+                    <div class="blog-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="Technical">Technical</button>
+                        <button class="filter-btn" data-filter="Personal">Personal</button>
+                        <button class="filter-btn" data-filter="Non-technical">Non-technical</button>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" id="blog-search" placeholder="Search blog posts..." class="form-control">
+                    </div>
+
+                    <div class="blog-posts" id="blog-container">
+                        <!-- Blog posts will be loaded here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Contact Page -->
+                <div id="contact-page" class="page">
+                    <div class="page-header">
+                        <h1>// Contact</h1>
+                        <p>Let's connect and build something amazing together</p>
+                    </div>
+                    
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3>📧 Email</h3>
+                                <p>john@example.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📍 Location</h3>
+                                <p>San Francisco, CA</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>🔗 Social</h3>
+                                <div class="social-links">
+                                    <a href="https://github.com/johndeveloper" target="_blank" class="social-link">GitHub</a>
+                                    <a href="https://linkedin.com/in/johndeveloper" target="_blank" class="social-link">LinkedIn</a>
+                                    <a href="https://twitter.com/johndeveloper" target="_blank" class="social-link">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Blog Post Detail Page (Hidden by default) -->
+                <div id="blog-detail-page" class="page">
+                    <div class="blog-detail-content" id="blog-detail-content">
+                        <!-- Blog post detail will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Status Bar -->
+    <footer class="status-bar">
+        <div class="status-left">
+            <span class="status-item">📍 Line 1, Column 1</span>
+            <span class="status-item">UTF-8</span>
+        </div>
+        <div class="status-right">
+            <span class="status-item current-file">about.md</span>
+            <span class="status-item">Markdown</span>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
