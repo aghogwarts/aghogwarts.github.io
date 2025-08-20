@@ -23,7 +23,7 @@ const appData = {
       id: 2,
       title: "IoT-Based Real-Time Health Monitoring System",
       description:
-        "Developed a health monitoring system using the LPC1768 microcontroller, MAX30102 pulse oximeter sensor, and LM35 temperature sensor to measure pulse rate, SpO2, and body temperature in real time. Displayed on a 16x2 I2C LCD panel. Implemented an RF algorithm for accurate reading analysis.",
+        "Developed a health monitoring system using the LPC1768 microcontroller, MAX30102 pulse oximeter sensor, and LM35 temperature sensor to measure pulse rate, SpO2, and body temperature in real time. Implemented an RF algorithm for accurate reading analysis.",
       technologies: [
         "Healthcare",
         "Embedded C",
