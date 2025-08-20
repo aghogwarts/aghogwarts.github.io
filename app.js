@@ -6,7 +6,14 @@ const appData = {
       title: "Custom IOC Scraper",
       description:
         "Custom IOC Scraper Script to help in Threat Intelligence as a mini project during my internship at Dassault Systèmes.",
-      technologies: ["Python", "bs4", "pandas", "requests", "regex"],
+      technologies: [
+        "Cyber Security",
+        "Python",
+        "bs4",
+        "pandas",
+        "requests",
+        "regex",
+      ],
       //image: "",
       github: "https://github.com/aghogwarts/ioc-scraper",
       //demo: "",
@@ -18,6 +25,7 @@ const appData = {
       description:
         "Developed a health monitoring system using the LPC1768 microcontroller, MAX30102 pulse oximeter sensor, and LM35 temperature sensor to measure pulse rate, SpO2, and body temperature in real time. Displayed on a 16x2 I2C LCD panel. Implemented an RF algorithm for accurate reading analysis.",
       technologies: [
+        "Healthcare",
         "Embedded C",
         "LPC1768",
         "MAX30102",
@@ -35,7 +43,12 @@ const appData = {
       title: "Fake Social Media Detection",
       description:
         "Fake Instagram account detection using an ML Model and combining with an extension to provide functionality. This was built as our project for Smart India Hackathon 2023.",
-      technologies: ["FastAPI", "SciKit-Learn", "Random Forest"],
+      technologies: [
+        "Machine Learning",
+        "FastAPI",
+        "SciKit-Learn",
+        "Random Forest",
+      ],
       //image: "",
       github:
         "https://github.com/sibi361/SIH_2023_fake_insta_profile_detection",
@@ -46,13 +59,12 @@ const appData = {
       id: 4,
       title: "PhishTrap - True Phishing Detection",
       description:
-        "Fake Instagram account detection using an ML Model and combining with an extension to provide functionality. This was built as our project for Smart India Hackathon 2023.",
-      technologies: ["FastAPI", "SciKit-Learn", "Random Forest"],
+        "PhishDetector is a powerful extension which detects phishing attacks in online banking web sites. It is a rule-based system that analyses the webpage content to identify phishing attacks.",
+      technologies: ["Cyber Security", "Regex", "NodeJS", "React"],
       //image: "",
-      github:
-        "https://github.com/sibi361/SIH_2023_fake_insta_profile_detection",
+      github: "https://github.com/CryptoniteKavach",
       //demo: "",
-      category: "Machine Learning",
+      category: "Cyber Security",
     },
     {
       id: 5,
