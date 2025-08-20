@@ -90,14 +90,12 @@ const appData = {
       description:
         "A curation of all the projects I've done so far including fun ones I've tested just to test the tech stack and has projects from every domain possible. Do check it out :)",
       technologies: [
-        "Machine Learning",
+        "ML",
         "Full Stack Development",
-        "Scraping",
         "Scripting",
         "DBMS",
         "Embedded",
-        "Computer Vision",
-        "CTF",
+        "CV",
         "Cyber Security",
         "OOP",
       ],
