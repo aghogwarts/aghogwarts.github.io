@@ -3,13 +3,93 @@ const appData = {
   projects: [
     {
       id: 1,
-      title: "placeholder",
-      description: "",
-      technologies: [""],
-      image: "",
-      github: "",
-      demo: "",
-      category: "",
+      title: "Custom IOC Scraper",
+      description:
+        "Custom IOC Scraper Script to help in Threat Intelligence as a mini project during my internship at Dassault Systèmes.",
+      technologies: ["Python", "bs4", "pandas", "requests", "regex"],
+      //image: "",
+      github: "https://github.com/aghogwarts/ioc-scraper",
+      //demo: "",
+      category: "Cyber Security",
+    },
+    {
+      id: 2,
+      title: "IoT-Based Real-Time Health Monitoring System",
+      description:
+        "Developed a health monitoring system using the LPC1768 microcontroller, MAX30102 pulse oximeter sensor, and LM35 temperature sensor to measure pulse rate, SpO2, and body temperature in real time. Displayed on a 16x2 I2C LCD panel. Implemented an RF algorithm for accurate reading analysis.",
+      technologies: [
+        "Embedded C",
+        "LPC1768",
+        "MAX30102",
+        "LM35",
+        "I2C LCD",
+        "Random Forest",
+      ],
+      //image: "",
+      github: "https://github.com/aghogwarts/ESD_Lab/tree/main/Project",
+      //demo: "",
+      category: "Embedded Systems & Healthcare",
+    },
+    {
+      id: 3,
+      title: "Fake Social Media Detection",
+      description:
+        "Fake Instagram account detection using an ML Model and combining with an extension to provide functionality. This was built as our project for Smart India Hackathon 2023.",
+      technologies: ["FastAPI", "SciKit-Learn", "Random Forest"],
+      //image: "",
+      github:
+        "https://github.com/sibi361/SIH_2023_fake_insta_profile_detection",
+      //demo: "",
+      category: "Machine Learning",
+    },
+    {
+      id: 4,
+      title: "PhishTrap - True Phishing Detection",
+      description:
+        "Fake Instagram account detection using an ML Model and combining with an extension to provide functionality. This was built as our project for Smart India Hackathon 2023.",
+      technologies: ["FastAPI", "SciKit-Learn", "Random Forest"],
+      //image: "",
+      github:
+        "https://github.com/sibi361/SIH_2023_fake_insta_profile_detection",
+      //demo: "",
+      category: "Machine Learning",
+    },
+    {
+      id: 5,
+      title: "Gideon Discord Bot",
+      description:
+        "This was my first discord bot from which i had started Discord Bot dev in python. Intended for my personal server for football with various tournament functionality using Google Sheets API and a FUT Card DB integration.",
+      technologies: [
+        "Disnake",
+        "Discord.Py",
+        "NumPy",
+        "Scrapy",
+        "MariaDB",
+        "PostgreSQL",
+        "MongoDB",
+        "Google Cloud API",
+      ],
+      github: "https://github.com/aghogwarts/Gideon",
+      category: "Discord Bot",
+    },
+    {
+      id: 6,
+      title: "Other Projects",
+      description:
+        "A curation of all the projects I've done so far including fun ones I've tested just to test the tech stack and has projects from every domain possible. Do check it out :)",
+      technologies: [
+        "Machine Learning",
+        "Full Stack Development",
+        "Scraping",
+        "Scripting",
+        "DBMS",
+        "Embedded",
+        "Computer Vision",
+        "CTF",
+        "Cyber Security",
+        "OOP",
+      ],
+      github: "https://github.com/aghogwarts?tab=repositories",
     },
   ],
   blogPosts: [
@@ -264,14 +344,15 @@ function loadProjects() {
   });
 }
 
+//<img src="${project.image}" alt="${
+//    project.title
+//  }" class="project-image" loading="lazy"></img>
+
 // Create project card
 function createProjectCard(project) {
   const card = document.createElement("div");
   card.className = "project-card";
   card.innerHTML = `
-    <img src="${project.image}" alt="${
-    project.title
-  }" class="project-image" loading="lazy">
     <div class="project-content">
       <h3 class="project-title">${project.title}</h3>
       <p class="project-description">${project.description}</p>
@@ -284,9 +365,6 @@ function createProjectCard(project) {
         <a href="${
           project.github
         }" target="_blank" class="project-link">GitHub</a>
-        <a href="${
-          project.demo
-        }" target="_blank" class="project-link">Live Demo</a>
       </div>
     </div>
   `;
