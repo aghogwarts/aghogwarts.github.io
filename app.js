@@ -57,9 +57,9 @@ const appData = {
     },
     {
       id: 4,
-      title: "PhishTrap - True Phishing Detection",
+      title: "ShadeBlock - True Phishing Detection",
       description:
-        "PhishDetector is a powerful extension which detects phishing attacks in online banking web sites. It is a rule-based system that analyses the webpage content to identify phishing attacks.",
+        "ShadeBlock is a powerful extension which detects phishing attacks in online banking web sites. It is a rule-based system that analyses the webpage content to identify phishing attacks.",
       technologies: ["Cyber Security", "Regex", "NodeJS", "React"],
       //image: "",
       github: "https://github.com/CryptoniteKavach",
